@@ -1,0 +1,141 @@
+
+
+#cont-btn{
+
+  width: 300px;
+  height: 20px;
+position: relative;
+margin: 0 auto;
+margin-bottom: 20px;
+border: none;
+
+}
+#contents{
+  margin-top: -250px;
+}
+form.signin{
+  width: 300px;
+  background: #fff;
+  background: -webkit-linear-gradient(#CCFF99,#FFFFCC); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#CCFF99,#FFFFCC); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#CCFF99,#FFFFCC); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#CCFF99,#FFFFCC)·; /* 标准的语法 */;
+  border-radius: 10px 0 10px 0;
+  box-shadow: 4px 4px 8px 6px #aaa;  /*盒阴影*/
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  display: none;
+  
+ 
+}
+
+.signin fieldset{border:0;
+  margin: 10px 14px;
+  
+}
+.signin legend span{
+  font-family: lato,helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 120%;
+  line-height: 120%;
+  color: #000;
+  
+}
+.signin section{
+  overflow: hidden;
+  padding: 5px 0;
+}
+.signin section label{
+  font-family: "source sans pro",helvetica,sans-serif;
+  float:left;
+  width: 100px 20px 0 0;
+  line-height: 45px;
+  color: #000;
+  font-size: 18px;
+}
+.signin section input{
+  float: right;
+  width: 180px;
+  margin: 10px 0 0 .20px;
+  padding: 3px 10px 2px;
+  color: #555;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px 0 10px 0;
+}
+input:-webkit-autofill{
+  color: #fff !important;
+}
+.signin section input[type=submit]{
+  float: right;
+  width: auto;
+  margin: 0 2 px 3px 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  border:none;
+  background-color: #d6e636;
+  box-shadow: 1px 1px 2px #888;
+}
+.signin section p{
+  float: right;
+  clear: both;
+  margin: 5px 0 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 1;
+  color: #555;
+
+}
+.signin section p a{
+  color: #333;
+}
+ .signin section p a:hover{
+  color: #777;
+  text-decoration: none;
+ }      
+ .signin section p.direction.error{
+  display: block;
+  color: #f00;
+
+ }
+ .signin section p.direction{
+  display: none;
+ }
+ 
+ #sign-in{
+margin-top: 0px;
+  margin-bottom: 15px;
+ }
+#sign-in:hover{
+  background: #99ff66;
+}
+legend section span {
+  position: absolute;;
+  width: 75px;
+  height: 30px;
+  left: 70%;
+  background-color:#ff0000;
+  border-radius: 10px 0 10px 0;
+  display: inline;
+  top: 20px;
+
+
+}
+legend  section span h6{
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 100%;
+  opacity: 1;
+  
+}
+.contents img{         /*底部三栏内容区内部6栏图片*/
+     
+      width: 200px;
+      height: 150px;
+      margin: 30px;
+      box-shadow: 4px 4px 4px 4px #aaa;

@@ -1,0 +1,443 @@
+*{
+   margin: 0;padding: 0;
+}
+body{
+    background-color:  #CCFF99 ;
+    background: -webkit-linear-gradient(#CCFF99,#FFFFCC); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#CCFF99,#FFFFCC); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#CCFF99,#FFFFCC); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#CCFF99,#FFFFCC)·; /* 标准的语法 */;
+    width: 960px;
+    margin: 0 auto;
+
+} 
+a:focus{outline: none;}
+
+ header{   /*页眉*/
+       width: 100%;
+       height:120px; 
+       background-image: url("../images/bj1.png");
+
+    }
+  .carousel-inner{
+    box-shadow: 4px 4px 4px 4px #aaa;
+  }
+
+.multi_drop_menu{             /*下拉菜单*/
+      font:1.5em helvetical,arial,sans-serif;
+      width: 960px;height: 50px;
+      position: relative;
+      padding: 20px;
+      z-index: 2;
+
+      
+      }/*字体栈*/
+   .multi_drop_menu a{
+        display: block;/*让链接充满列表项*/
+        color: #fff;/*文本颜色*/
+        background-color:#339900;/*背景颜色*/
+        padding: .2em 1em;/*链接内边距*/
+        border-width: 5px;/*分隔线宽度*/
+        border-color: transparent;/*可以设置颜色，也可以不*/}
+        .multi_drop_menu a:hover{
+         color: #000;/*悬停时文本颜色*/
+         background-color: #33FF66;/*悬停时背景色*/
+        }
+       
+        /*添加功能样式*/
+        .multi_drop_menu *{
+         margin:0;
+         padding: 0;
+         border-radius:  10px;}
+         .multi_drop_menu ul{
+            float: left;/*强制ul包围li*/
+
+         }
+         .multi_drop_menu li{
+            float: left;/*水平排列菜单栏*/
+            list-style-type: none;/*去掉默认的项目符号*/
+            position:relative;/*为子菜单提供定位的上下文*/
+
+
+         }
+         .multi_drop_menu li a{
+            display: block;/*让列表填满列表项*/
+            border-right-style: solid;/*给每个链接添加一个右边框*/
+            background-clip: padding-box;/*背景只出现在内边距区域的后面*/
+            text-decoration: none;/*去掉下划线*/
+         }
+         .multi_drop_menu li:last-child a{
+            border-right-style: none;
+
+         }
+         .multi_drop_menu li ul{
+            display: none;/*临时隐藏低级菜单*/
+         }
+         /*添加的视觉样式*/
+         /*二级菜单宽度*/
+         .multi_drop_menu li ul{
+            width: 9em;
+
+         }
+         .multi_drop_menu li li a{
+            border-right-style: none;/*去掉继承的右边框*/
+            border-top-style: solid;/*添加上边框*/
+
+         }
+         /*添加功能样式*/
+         .multi_drop_menu li ul{
+            display: block;/*临时显示耳机下拉菜单*/
+            position: absolute;/*相对于父菜单项定位*/
+            left: 0;/*左边与父菜单底边对齐*/
+            top: 100%;/*顶边与父菜单底边对齐*/
+
+         }
+         .multi_drop_menu li li{
+            float: none;/*停止浮动恢复堆叠*/
+
+         }
+         .multi_drop_menu li li ul{
+            display: none;/*隐藏三级菜单*/
+
+         }
+         .multi_drop_menu li ul{
+            display: none;/*隐藏二级下拉菜单*/
+            position: absolute;/*相对于父类菜单定位*/
+            left: 0;/*左边与父类菜单对齐*/
+            top: 100%;/*顶边与父类单向底边对齐*/
+
+         }
+         .multi_drop_menu li:hover>ul{
+            display: block;/*父元素悬停时显示*/
+
+
+         }
+
+            li ul{
+               display: none;/*隐藏二级菜单*/
+
+            }
+            li:hover>ul{
+               display: block;/*显示二级菜单*/
+
+            }
+            .multi_drop_menu li li ul{
+               position: absolute;
+               left: 100%;
+               top: 0;
+            }
+            .multi_drop_menu li:last-child a{border-bottom-right-radius:10px;}
+                .multi_drop_menu li:first-child a{border-top-left-radius:10px;}
+   
+    #fc{ 
+
+    position: relative;                   /*风车图片*/
+       bottom: 90%;
+       left: 30%;
+       -webkit-transform 10s;/* For Safari 3.1 to 6.0*/
+       transition: transform 10s;
+    }
+    #fc:hover{              /*为风车图片定义一个hover伪类*/ 
+      
+      -webkit-transform:rotate(2160deg);/* For Safari 3.1 to 6.0*/
+      transform:rotate(2160deg);      /*旋转2160度*/
+    }
+  #news{                        /*新闻栏*/
+     position: relative;
+     float: left;
+     border: 1px solid #C0C0C0  ;
+     border-radius: 6px;
+     bottom: 350px;
+     left: 600px;
+     width: 340px;
+     height: 300px;
+     padding-left: 20px;
+     box-shadow: 4px 4px 8px 6px #aaa;  /*盒阴影*/
+  }
+  #news h4{   /*新闻标题*/
+   padding: 0;
+   color: #66CC33;}
+  #myCarousel{ /*图片轮播*/
+      position: relative;
+      width: 500px;
+      height: 312px; 
+      margin: 40px; 
+    
+   }
+   .contents{    /*底部三栏内容区*/
+      width: 960px;
+      height: 480px;
+      border:1px #A0A0A0   solid;
+      border-radius: 5px;
+      padding: 10px;
+      background-color:  #CCFF99 ;
+      background: -webkit-linear-gradient(#CCFF99,#FFFFCC); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(#CCFF99,#FFFFCC); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(#CCFF99,#FFFFCC); /* Firefox 3.6 - 15 */
+      background: linear-gradient(#CCFF99,#FFFFCC)·; /* 标准的语法 */;
+      margin: 10px;
+      box-shadow: 4px 4px 8px 6px #aaa;
+      position: relative;
+
+      
+   }
+   
+   
+    .contents img{         /*底部三栏内容区内部6栏图片*/
+     
+      width: 200px;
+      height: 150px;
+      margin: 15px;
+      box-shadow: 4px 4px 4px 4px #aaa;
+
+
+      -webkit-transform 5s;/* For Safari 3.1 to 6.0*/
+       transition: transform 5s;
+
+      }
+    .contents img:hover{         /*底部三栏内容区内部6栏图片伪类*/
+      border: 1px #FFF solid;
+      opacity: .6;
+      webkit-transform:rotateY(180deg);/* For Safari 3.1 to 6.0*/
+      transform:rotateY(180deg);    
+      
+
+}
+   .content1{            /*底部三栏内容区1*/
+      position: absolute;
+      width: 700px;
+      height: 400px;
+      margin-left: 12%;
+}
+  
+   .content2{
+      position: absolute;
+      width: 700px;
+      height: 400px;
+      display: none;
+      margin-left: 12%;
+}
+   .content3{
+      position: absolute;
+      width: 700px;
+      height: 400px;
+      display: none;
+      margin-left: 12%;
+      
+   }
+   
+   .marquee li:hover{  /*跑马灯*/
+      font-size: 15px;
+      color: #99FF00;
+
+   }
+   #title{      /*顶部标题*/
+     position: relative;
+     bottom: 100%;
+     right: 3%;
+   
+  
+   
+}
+
+.btn-group{  /*bootstrap按钮组*/
+  position: relative;
+   margin: 0 auto;
+   margin-bottom: 10px;
+
+
+}
+ .btn-group button{ 
+  width: 100px;
+  color: #339900;
+  background: #fff;
+
+}
+.btn-group button:hover{
+  background: #CCFF66;
+}
+
+
+
+.pagination{
+  position: relative;
+  bottom: 15px;
+
+  
+
+
+}
+.pagination a{                 /*bootstrap分页栏*/
+       color: #339900;         /*文本颜色*/
+}
+.pagination a:hover{
+  background: #99FF66;
+}
+.login{ 
+position: relative;  /*登录注册板块*/
+bottom: 100%;
+left: 70%;
+}
+.btn-group .log-in{ /*登陆按钮*/
+width: 50px;
+background: #CCFF66;
+margin-right: 5px;
+}
+.btn-group .sign {    /*注册按钮*/
+  width: 100px;
+  background: #CCFF66;
+
+}
+.btn-group .sign:hover{ 
+  background: #BBFF66;
+  color: #336600;
+}
+.btn-group .log-in:hover{
+  background: #BBFF66;
+  color: #336600;
+}
+#btn-login{
+            position: relative;
+            left: 70%;
+          
+          }
+          .btn{
+            background: #99ff66;
+            border: none;
+          }
+          .btn:hover{
+            background: #99ffaa;
+          }
+
+footer{      /*页脚*/
+  clear: both;
+  text-align: center;
+  margin: 20px;
+  width: 960px;
+  height: 100px;
+  background-image: url("../images/grass1.png");
+  color: #CC6600;
+  position: relative;
+
+}
+/*注册界面*/
+form.signin{
+  width: 300px;
+  background: #fff;
+  background: -webkit-linear-gradient(#CCFF99,#FFFFCC); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#CCFF99,#FFFFCC); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#CCFF99,#FFFFCC); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#CCFF99,#FFFFCC)·; /* 标准的语法 */;
+  border-radius: 10px 0 10px 0;
+  box-shadow: 4px 4px 8px 6px #aaa;  /*盒阴影*/
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  display: none;
+  
+ 
+}
+
+.signin fieldset{border:0;
+  margin: 10px 14px;
+  
+}
+.signin legend span{
+  font-family: lato,helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 120%;
+  line-height: 120%;
+  color: #000;
+  
+}
+.signin section{
+  overflow: hidden;
+  padding: 5px 0;
+}
+.signin section label{
+  font-family: "source sans pro",helvetica,sans-serif;
+  float:left;
+  width: 100px 20px 0 0;
+  line-height: 45px;
+  color: #000;
+  font-size: 18px;
+}
+.signin section input{
+  float: right;
+  width: 180px;
+  margin: 10px 0 0 .20px;
+  padding: 3px 10px 2px;
+  color: #555;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px 0 10px 0;
+}
+input:-webkit-autofill{
+  color: #fff !important;
+}
+.signin section input[type=submit]{
+  float: right;
+  width: auto;
+  margin: 0 2 px 3px 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  border:none;
+  background-color: #d6e636;
+  box-shadow: 1px 1px 2px #888;
+}
+.signin section p{
+  float: right;
+  clear: both;
+  margin: 5px 0 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 1;
+  color: #555;
+
+}
+.signin section p a{
+  color: #333;
+}
+ .signin section p a:hover{
+  color: #777;
+  text-decoration: none;
+ }      
+ .signin section p.direction.error{
+  display: block;
+  color: #f00;
+
+ }
+ .signin section p.direction{
+  display: none;
+ }
+ 
+ #sign-in{
+margin-top: 0px;
+  margin-bottom: 15px;
+ }
+#sign-in:hover{
+  background: #99ff66;
+}
+legend section span {
+  position: absolute;;
+  width: 75px;
+  height: 30px;
+  left: 70%;
+  background-color:#ff0000;
+  border-radius: 10px 0 10px 0;
+  display: inline;
+
+
+}
+legend  section span h6{
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 100%;
+  opacity: 1;
+  
+}
+
